@@ -1,0 +1,11 @@
+framework module WunuLockLib {
+  umbrella header "WunuLockLib.h"
+
+  export *
+  module * { export * }
+}
+
+module WunuLockLib.Swift {
+    header "WunuLockLib-Swift.h"
+    requires objc
+}

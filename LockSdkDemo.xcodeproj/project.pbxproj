@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A18F98FFC33A63C19785490 /* Pods_LockSdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0053EFB147F71E1EE4493 /* Pods_LockSdkDemo.framework */; };
 		AA0DCCDD2359AED200FFB3FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCCDC2359AED200FFB3FA /* AppDelegate.swift */; };
 		AA0DCCDF2359AED200FFB3FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCCDE2359AED200FFB3FA /* ViewController.swift */; };
 		AA0DCCE22359AED200FFB3FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0DCCE02359AED200FFB3FA /* Main.storyboard */; };
@@ -15,6 +16,17 @@
 		AA0DCCEA2359AED500FFB3FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0DCCE82359AED500FFB3FA /* LaunchScreen.storyboard */; };
 		AA0DCCF52359AED500FFB3FA /* LockSdkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCCF42359AED500FFB3FA /* LockSdkDemoTests.swift */; };
 		AA0DCD002359AED500FFB3FA /* LockSdkDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCCFF2359AED500FFB3FA /* LockSdkDemoUITests.swift */; };
+		AA0DCD142359AF5700FFB3FA /* LockUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCD132359AF5700FFB3FA /* LockUtil.swift */; };
+		AA855D7E236030A9009ABA6F /* WunuLockLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA855D7C236030A3009ABA6F /* WunuLockLib.framework */; };
+		AA855D7F236030A9009ABA6F /* WunuLockLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA855D7C236030A3009ABA6F /* WunuLockLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA855D84236031BC009ABA6F /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D81236031BC009ABA6F /* BluetoothDelegate.swift */; };
+		AA855D85236031BC009ABA6F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D82236031BC009ABA6F /* BluetoothManager.swift */; };
+		AA855D86236031BC009ABA6F /* BluetoothManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D83236031BC009ABA6F /* BluetoothManagerExtension.swift */; };
+		AA855D89236031CF009ABA6F /* BleScanPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D87236031CF009ABA6F /* BleScanPage.swift */; };
+		AA855D8A236031CF009ABA6F /* LockFunctionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D88236031CF009ABA6F /* LockFunctionPage.swift */; };
+		AA855D8F236031F7009ABA6F /* BleScanItemResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D8C236031F7009ABA6F /* BleScanItemResult.swift */; };
+		AA855D90236031F7009ABA6F /* CustomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D8D236031F7009ABA6F /* CustomModalView.swift */; };
+		AA855D91236031F7009ABA6F /* DevInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D8E236031F7009ABA6F /* DevInfoHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +46,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AA0DCD112359AF1B00FFB3FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA855D7F236030A9009ABA6F /* WunuLockLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3FF0053EFB147F71E1EE4493 /* Pods_LockSdkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockSdkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B11545262B7B5C188CD2D1 /* Pods-LockSdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockSdkDemo.debug.xcconfig"; path = "Target Support Files/Pods-LockSdkDemo/Pods-LockSdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0DCCD92359AED200FFB3FA /* LockSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0DCCDC2359AED200FFB3FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0DCCDE2359AED200FFB3FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +77,17 @@
 		AA0DCCFB2359AED500FFB3FA /* LockSdkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockSdkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0DCCFF2359AED500FFB3FA /* LockSdkDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockSdkDemoUITests.swift; sourceTree = "<group>"; };
 		AA0DCD012359AED500FFB3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0DCD132359AF5700FFB3FA /* LockUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LockUtil.swift; path = ../../../../../../WNLockSDK/WunuLockDemo/WunuLockDemo/util/LockUtil.swift; sourceTree = "<group>"; };
+		AA855D7C236030A3009ABA6F /* WunuLockLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WunuLockLib.framework; sourceTree = "<group>"; };
+		AA855D81236031BC009ABA6F /* BluetoothDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
+		AA855D82236031BC009ABA6F /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		AA855D83236031BC009ABA6F /* BluetoothManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManagerExtension.swift; sourceTree = "<group>"; };
+		AA855D87236031CF009ABA6F /* BleScanPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleScanPage.swift; sourceTree = "<group>"; };
+		AA855D88236031CF009ABA6F /* LockFunctionPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockFunctionPage.swift; sourceTree = "<group>"; };
+		AA855D8C236031F7009ABA6F /* BleScanItemResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleScanItemResult.swift; sourceTree = "<group>"; };
+		AA855D8D236031F7009ABA6F /* CustomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalView.swift; sourceTree = "<group>"; };
+		AA855D8E236031F7009ABA6F /* DevInfoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevInfoHeaderView.swift; sourceTree = "<group>"; };
+		D5F132FA28AA72E54D6C8931 /* Pods-LockSdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockSdkDemo.release.xcconfig"; path = "Target Support Files/Pods-LockSdkDemo/Pods-LockSdkDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA855D7E236030A9009ABA6F /* WunuLockLib.framework in Frameworks */,
+				7A18F98FFC33A63C19785490 /* Pods_LockSdkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +117,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94A5A3EC54C633C71103B36C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0053EFB147F71E1EE4493 /* Pods_LockSdkDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA0DCCD02359AED200FFB3FA = {
 			isa = PBXGroup;
 			children = (
+				AA855D7C236030A3009ABA6F /* WunuLockLib.framework */,
 				AA0DCCDB2359AED200FFB3FA /* LockSdkDemo */,
 				AA0DCCF32359AED500FFB3FA /* LockSdkDemoTests */,
 				AA0DCCFE2359AED500FFB3FA /* LockSdkDemoUITests */,
 				AA0DCCDA2359AED200FFB3FA /* Products */,
+				ECA5D1C778CA6F1AD70F83C3 /* Pods */,
+				94A5A3EC54C633C71103B36C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +151,10 @@
 		AA0DCCDB2359AED200FFB3FA /* LockSdkDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA855D8B236031D8009ABA6F /* views */,
+				AA855D8023603169009ABA6F /* ble */,
+				AA0DCD232359AF6F00FFB3FA /* pages */,
+				AA0DCD122359AF3E00FFB3FA /* util */,
 				AA0DCCDC2359AED200FFB3FA /* AppDelegate.swift */,
 				AA0DCCDE2359AED200FFB3FA /* ViewController.swift */,
 				AA0DCCE02359AED200FFB3FA /* Main.storyboard */,
@@ -128,6 +184,52 @@
 			path = LockSdkDemoUITests;
 			sourceTree = "<group>";
 		};
+		AA0DCD122359AF3E00FFB3FA /* util */ = {
+			isa = PBXGroup;
+			children = (
+				AA0DCD132359AF5700FFB3FA /* LockUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		AA0DCD232359AF6F00FFB3FA /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				AA855D87236031CF009ABA6F /* BleScanPage.swift */,
+				AA855D88236031CF009ABA6F /* LockFunctionPage.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		AA855D8023603169009ABA6F /* ble */ = {
+			isa = PBXGroup;
+			children = (
+				AA855D81236031BC009ABA6F /* BluetoothDelegate.swift */,
+				AA855D82236031BC009ABA6F /* BluetoothManager.swift */,
+				AA855D83236031BC009ABA6F /* BluetoothManagerExtension.swift */,
+			);
+			path = ble;
+			sourceTree = "<group>";
+		};
+		AA855D8B236031D8009ABA6F /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AA855D8C236031F7009ABA6F /* BleScanItemResult.swift */,
+				AA855D8D236031F7009ABA6F /* CustomModalView.swift */,
+				AA855D8E236031F7009ABA6F /* DevInfoHeaderView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		ECA5D1C778CA6F1AD70F83C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55B11545262B7B5C188CD2D1 /* Pods-LockSdkDemo.debug.xcconfig */,
+				D5F132FA28AA72E54D6C8931 /* Pods-LockSdkDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA0DCD042359AED500FFB3FA /* Build configuration list for PBXNativeTarget "LockSdkDemo" */;
 			buildPhases = (
+				6AB49C5DB9DB5A39F2AF9AA5 /* [CP] Check Pods Manifest.lock */,
 				AA0DCCD52359AED200FFB3FA /* Sources */,
 				AA0DCCD62359AED200FFB3FA /* Frameworks */,
 				AA0DCCD72359AED200FFB3FA /* Resources */,
+				AA0DCD112359AF1B00FFB3FA /* Embed Frameworks */,
+				58B8A5245CFEE208EE52B22A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,7 +296,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = Iwunu;
 				TargetAttributes = {
 					AA0DCCD82359AED200FFB3FA = {
@@ -254,14 +359,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58B8A5245CFEE208EE52B22A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LockSdkDemo/Pods-LockSdkDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LockSdkDemo/Pods-LockSdkDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LockSdkDemo/Pods-LockSdkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AB49C5DB9DB5A39F2AF9AA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LockSdkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA0DCCD52359AED200FFB3FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA855D8F236031F7009ABA6F /* BleScanItemResult.swift in Sources */,
+				AA855D89236031CF009ABA6F /* BleScanPage.swift in Sources */,
+				AA0DCD142359AF5700FFB3FA /* LockUtil.swift in Sources */,
 				AA0DCCDF2359AED200FFB3FA /* ViewController.swift in Sources */,
+				AA855D90236031F7009ABA6F /* CustomModalView.swift in Sources */,
+				AA855D91236031F7009ABA6F /* DevInfoHeaderView.swift in Sources */,
 				AA0DCCE52359AED200FFB3FA /* LockSdkDemo.xcdatamodeld in Sources */,
+				AA855D8A236031CF009ABA6F /* LockFunctionPage.swift in Sources */,
 				AA0DCCDD2359AED200FFB3FA /* AppDelegate.swift in Sources */,
+				AA855D85236031BC009ABA6F /* BluetoothManager.swift in Sources */,
+				AA855D86236031BC009ABA6F /* BluetoothManagerExtension.swift in Sources */,
+				AA855D84236031BC009ABA6F /* BluetoothDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,36 +590,52 @@
 		};
 		AA0DCD052359AED500FFB3FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55B11545262B7B5C188CD2D1 /* Pods-LockSdkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6Z2F84KXQL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LockSdkDemo",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LockSdkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wunu.LockSdkDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iwunu.locksdk.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		AA0DCD062359AED500FFB3FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F132FA28AA72E54D6C8931 /* Pods-LockSdkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6Z2F84KXQL;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LockSdkDemo",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LockSdkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wunu.LockSdkDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iwunu.locksdk.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
