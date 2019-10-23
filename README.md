@@ -11,6 +11,7 @@
 ## 1.工程SDK配置
 
 1.1 将WunuLockLib.framework包拖进工程目录，设置第三方库为Embed & Sign.
+
 1.2 创建PodFile,添加依赖库
 <pre><code>
 target "LockSdkDemo" do 
@@ -31,6 +32,7 @@ end
 </code></pre> 
 1.3 申请sdk appkey
   发送邮件至logsoul@qq.com，申请appKey， 注明申请app主体信息，联系方式，bundleId，应用名称，应用说明，我们将于1～2个工作日处理。
+
 1.4 插件初始化
 <pre><code>
 //初始化
@@ -340,7 +342,7 @@ switch data["cmd"]! as! String {
 
   >* return: 
     >>code: int类型，200表示修改成功，300表示修改失败  
-注意：指纹锁初始状态下管理密码为12345678，因此绑定门锁后，建议立即修改管理密码。
+注意：指纹锁初始状态下管理密码为12345678，因此绑定门锁后，建议立即修改管理密码。
 
 ## 5. Nx,Mx,Cx,Dx NB系列锁指令接口
 
