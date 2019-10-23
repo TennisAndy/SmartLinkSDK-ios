@@ -17,8 +17,6 @@
 		AA0DCCF52359AED500FFB3FA /* LockSdkDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCCF42359AED500FFB3FA /* LockSdkDemoTests.swift */; };
 		AA0DCD002359AED500FFB3FA /* LockSdkDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCCFF2359AED500FFB3FA /* LockSdkDemoUITests.swift */; };
 		AA0DCD142359AF5700FFB3FA /* LockUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DCD132359AF5700FFB3FA /* LockUtil.swift */; };
-		AA855D7E236030A9009ABA6F /* WunuLockLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA855D7C236030A3009ABA6F /* WunuLockLib.framework */; };
-		AA855D7F236030A9009ABA6F /* WunuLockLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA855D7C236030A3009ABA6F /* WunuLockLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA855D84236031BC009ABA6F /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D81236031BC009ABA6F /* BluetoothDelegate.swift */; };
 		AA855D85236031BC009ABA6F /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D82236031BC009ABA6F /* BluetoothManager.swift */; };
 		AA855D86236031BC009ABA6F /* BluetoothManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D83236031BC009ABA6F /* BluetoothManagerExtension.swift */; };
@@ -27,6 +25,8 @@
 		AA855D8F236031F7009ABA6F /* BleScanItemResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D8C236031F7009ABA6F /* BleScanItemResult.swift */; };
 		AA855D90236031F7009ABA6F /* CustomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D8D236031F7009ABA6F /* CustomModalView.swift */; };
 		AA855D91236031F7009ABA6F /* DevInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA855D8E236031F7009ABA6F /* DevInfoHeaderView.swift */; };
+		AA855D9423604777009ABA6F /* WunuLockLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA855D9223604770009ABA6F /* WunuLockLib.framework */; };
+		AA855D9523604777009ABA6F /* WunuLockLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA855D9223604770009ABA6F /* WunuLockLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AA855D7F236030A9009ABA6F /* WunuLockLib.framework in Embed Frameworks */,
+				AA855D9523604777009ABA6F /* WunuLockLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,7 +78,6 @@
 		AA0DCCFF2359AED500FFB3FA /* LockSdkDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockSdkDemoUITests.swift; sourceTree = "<group>"; };
 		AA0DCD012359AED500FFB3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA0DCD132359AF5700FFB3FA /* LockUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LockUtil.swift; path = ../../../../../../WNLockSDK/WunuLockDemo/WunuLockDemo/util/LockUtil.swift; sourceTree = "<group>"; };
-		AA855D7C236030A3009ABA6F /* WunuLockLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WunuLockLib.framework; sourceTree = "<group>"; };
 		AA855D81236031BC009ABA6F /* BluetoothDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
 		AA855D82236031BC009ABA6F /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		AA855D83236031BC009ABA6F /* BluetoothManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManagerExtension.swift; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		AA855D8C236031F7009ABA6F /* BleScanItemResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleScanItemResult.swift; sourceTree = "<group>"; };
 		AA855D8D236031F7009ABA6F /* CustomModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModalView.swift; sourceTree = "<group>"; };
 		AA855D8E236031F7009ABA6F /* DevInfoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevInfoHeaderView.swift; sourceTree = "<group>"; };
+		AA855D9223604770009ABA6F /* WunuLockLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WunuLockLib.framework; sourceTree = "<group>"; };
 		D5F132FA28AA72E54D6C8931 /* Pods-LockSdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockSdkDemo.release.xcconfig"; path = "Target Support Files/Pods-LockSdkDemo/Pods-LockSdkDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA855D7E236030A9009ABA6F /* WunuLockLib.framework in Frameworks */,
+				AA855D9423604777009ABA6F /* WunuLockLib.framework in Frameworks */,
 				7A18F98FFC33A63C19785490 /* Pods_LockSdkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,7 +128,7 @@
 		AA0DCCD02359AED200FFB3FA = {
 			isa = PBXGroup;
 			children = (
-				AA855D7C236030A3009ABA6F /* WunuLockLib.framework */,
+				AA855D9223604770009ABA6F /* WunuLockLib.framework */,
 				AA0DCCDB2359AED200FFB3FA /* LockSdkDemo */,
 				AA0DCCF32359AED500FFB3FA /* LockSdkDemoTests */,
 				AA0DCCFE2359AED500FFB3FA /* LockSdkDemoUITests */,
