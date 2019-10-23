@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        let data = LockCmdManager.shared.initSdk(appId: "com.iwunu.locksdk.demo", appKey: "0570d941-9c33-409e-aaa8-60853da1a022")
+        let data = LockCmdManager.shared.initSdk(appId: "your bundleId", appKey: "your appKey")
         print("initSdk: \(data)")
         return true
     }
