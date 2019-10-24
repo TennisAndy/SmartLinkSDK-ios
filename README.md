@@ -353,3 +353,42 @@ switch data["cmd"]! as! String {
 
   >* return data: 
     >>imei: String类型，表示NB模组设备imei
+## 6. WSJ_Qx 蓝牙取电开关指令接口
+
+### 6.1 蓝牙上电 sendOpenLockP1/sendOpenLockP2 
+  >func sendOpenLockP1(devName:String, basecode: UInt32) -> Data
+  >* params: 
+    >>devName: String类型，取电开关名称
+    >>basecode: int类型，蓝牙通信加密码  
+
+   >* return data: 
+    >>randomN: int类型，上电第二步加密参数
+
+  >func sendOpenLockP2(devName:String, basecode: UInt32, randomN: UInt32) -> Data
+  >* params: 
+    >>devName: String类型，取电开关蓝牙名称
+    >>basecode: int类型，蓝牙通信加密码  
+    >>randomN: int类型，上电第一步返回
+
+  >* return: 
+    >>code: int类型，200表示蓝牙上电成功，300表示蓝牙上电失败
+
+注意：蓝牙取电开关，当蓝牙上电后，蓝牙断开后延时5分钟断开。
+
+## 7. 门锁离线密码生成接口
+
+### 7.1 生成离线密码 genOfflinePincode
+  >func genOfflinePincode(devName:String, lockMac:String, basecode: UInt32, pwdType: UInt8, startTime: Date, endTime: Date)
+  >* params: 
+    >>devName: String类型，锁蓝牙名称
+    >>lockMac: String类型，锁蓝牙MAC
+    >>basecode: int类型，蓝牙通信加密码  
+    >>pwdType: int类型，离线密码类型，0是限时，1是单次，3是清理密码
+    >>startTime: Date类型，离线密码生效时间，取本地时钟，例如中国为UTC+8时间，忽略即时生效
+    >>endTime: Date类型，离线密码失效时间，取本地时钟，例如中国为UTC+8时间
+
+   >* return data: 
+    >>code: int类型，200表示生成功能，其他失败
+    >>data: String类型，离线开锁密码或失败信息
+
+注意：若appId或appKey非法，则sdk init不成功，无法成功调用此接口。
