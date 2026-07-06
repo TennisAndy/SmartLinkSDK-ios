@@ -140,7 +140,7 @@ switch data["cmd"]! as! String {
 
   >* return: 
     >>code: int类型，200表示同步时钟成功，300表示同步时钟失败
-注意：当密码，刷卡无法开门，或重启后，需要更新时钟。  
+注意：当密码，刷卡无法开门，或重启后，需要更新时钟。  
 
 ### 3.2 添加限时密码 addPincode
   >func addPincode(devName: String, basecode: UInt32, pincode: UInt32, index:UInt8, startTime: Date, endTime: Date) -> Data
@@ -237,7 +237,7 @@ switch data["cmd"]! as! String {
   >* return: 
     >>code: int类型，200表示同步时钟成功，300表示同步时钟失败  
     >>data: object类型，其中msg表示提示信息   
-注意：当密码，刷卡，指纹无法开门，或重启后，需要更新时钟。  
+注意：当密码，刷卡，指纹无法开门，或重启后，需要更新时钟。  
 
 ### 4.3 添加限时密码 addPincode
   >func addPincode(devName: String, basecode: UInt32, pincode: UInt32, index:UInt8, startTime: Date, endTime: Date) -> Data
